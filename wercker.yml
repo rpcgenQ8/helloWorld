@@ -1,4 +1,4 @@
-box: dotnet
+box: microsoft/dotnet
 no-response-timeout: 10
 build:
     steps:
@@ -25,6 +25,6 @@ build:
             - internal/docker-push:
                 username: $USERNAME
                 password: $PASSWORD
-                repository: dotnetcoreservices/hello-world
+                repository: rpcgenQ8/helloWorld
                 registry: https://registry.hub.docker.com
                 entrypoint: "/pipline/source/app/docker_entrypoint.sh"
